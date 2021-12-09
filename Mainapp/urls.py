@@ -7,6 +7,8 @@ app_name = 'MainApp'
 urlpatterns = [
     path('',views.index, name= 'index'),  #Be consistent here, the only path we have here is our home page 
     path('topics',views.topics, name='topics'),
-    path('topics/<int:topic_id>/',views.topic, name='topic')
+    path('topics/<int:topic_id>/',views.topic, name='topic'),
+    path('new_topic',views.new_topic, name='new_topic'),
+    path('new_entry/<int:topic_id>/',views.new_entry, name='new_entry'),
 ]
 

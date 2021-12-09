@@ -13,5 +13,7 @@
     <li> No topics have been added yet.</li>
     {% endfor %}
 </ul>
-
+<p>
+    <a href="{% url 'MainApp:new_topic' %}">Add a new topic</a>
+</p>
 {% endblock content %}
